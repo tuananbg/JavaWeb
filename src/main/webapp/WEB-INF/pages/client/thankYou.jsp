@@ -58,7 +58,7 @@
                             <img src="/laptopshop/img/${sanpham.id}.png" alt="not found img"
                                  class="img-reponsive fix-size-img">
                         </td>
-                        <td style="color:green">
+                        <td>
                                 ${sanpham.tenSanPham}
                         </td>
                         <td class="donGia">

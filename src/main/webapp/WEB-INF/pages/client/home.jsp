@@ -67,7 +67,7 @@
         </div>
 
         <div class="content-grids">
-            <h4 class="mb-5">DANH SÁCH LAPTOP MỚI NHẤT</h4>
+            <h4 class="mb-5">DANH SÁCH SẢN PHẨM BÁN CHẠY NHẤT</h4>
         </div>
     </div>
     <div class="content-sidebar">

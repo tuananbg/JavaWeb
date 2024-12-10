@@ -5,40 +5,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quản lý nhãn hiệu</title>
+    <meta charset="UTF-8">
+    <title>Thống kê</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"></script>
 
     <script>
         window.onload = function () {
-            var data = [];
+            var data = [
+                {year: "2024", month: "01", total: 5000000},
+                {year: "2024", month: "02", total: 6000000},
+                {year: "2024", month: "03", total: 4500000},
+                {year: "2024", month: "04", total: 7000000},
+                {year: "2024", month: "05", total: 6500000},
+                {year: "2024", month: "06", total: 8000000},
+                {year: "2024", month: "07", total: 7500000},
+                
+            ];
             var label = [];
             var dataForDataSets = [];
 
-            $.ajax({
-                async: false,
-                type: "GET",
-                data: data,
-                contentType: "application/json",
-                url: "http://localhost:8080/laptopshop/api/don-hang/report",
-                success: function (data) {
-                    for (var i = 0; i < data.length; i++) {
-                        label.push(data[i][0] + "/" + data[i][1]);
-                        dataForDataSets.push(data[i][2] / 1000000);
-                    }
-                },
-                error: function (e) {
-                    alert("Error: ", e);
-                    console.log("Error", e);
-                }
-            });
+            // Xử lý dữ liệu giả
+            for (var i = 0; i < data.length; i++) {
+                label.push(data[i].year + "-" + data[i].month);  // Ghép năm và tháng
+                dataForDataSets.push(data[i].total / 1000000);  // Chuyển sang triệu đồng
+            }
 
+            // Lấy phần tử canvas để vẽ biểu đồ
             var canvas = document.getElementById('myChart');
-
-
-            data = {
+            var chartData = {
                 labels: label,
                 datasets: [{
-                    label: "Tổng giá trị ( Triệu đồng)",
+                    label: "Tổng giá trị (Triệu đồng)",
                     backgroundColor: "#0000ff",
                     borderColor: "#0000ff",
                     borderWidth: 2,
@@ -47,7 +47,9 @@
                     data: dataForDataSets,
                 }]
             };
-            var option = {
+
+            // Các tùy chọn biểu đồ
+            var options = {
                 scales: {
                     yAxes: [{
                         stacked: true,
@@ -66,15 +68,16 @@
                 maintainAspectRatio: false,
                 legend: {
                     labels: {
-                        // This more specific font property overrides the global property
                         fontSize: 20
                     }
                 }
             };
 
-            var myBarChart = Chart.Bar(canvas, {
-                data: data,
-                options: option
+            // Vẽ biểu đồ bar
+            var myBarChart = new Chart(canvas, {
+                type: 'bar',
+                data: chartData,
+                options: options
             });
         }
     </script>
@@ -84,7 +87,7 @@
 <jsp:include page="template/header.jsp"></jsp:include>
 <jsp:include page="template/sidebar.jsp"></jsp:include>
 
-<div class="col-md-9 animated bounce">
+<div class="col-md-10 animated bounce">
     <h3 class="page-header">Thống kê</h3>
 
     <canvas id="myChart" width="600px" height="400px"></canvas>

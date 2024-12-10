@@ -12,7 +12,7 @@
 <jsp:include page="template/header.jsp"></jsp:include>
 <jsp:include page="template/sidebar.jsp"></jsp:include>
 
-<div class="col-md-9 animated bounce">
+<div class="col-md-10 animated bounce">
     <h3 class="page-header">Quản lý Nhãn hiệu</h3>
 
     <button class="btn btn-success btnThemNhanHieu">Thêm mới Nhãn hiệu</button>

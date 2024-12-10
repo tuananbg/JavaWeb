@@ -119,7 +119,8 @@ public class SanPhamServiceImpl implements SanPhamService {
 
     @Override
     public List<SanPham> getLatestSanPham() {
-        return this.sanPhamRepository.findFirst12ByDanhMucTenDanhMucContainingIgnoreCaseOrderByIdDesc("Laptop");
+//        return this.sanPhamRepository.findFirst12ByDanhMucTenDanhMucContainingIgnoreCaseOrderByIdDesc("Laptop");
+        return this.sanPhamRepository.findTop12ByHighestStock();
     }
 
     @Override

@@ -16,10 +16,8 @@
     <script src="Frontend/js/responsiveslides.min.js"></script>
     <script src="js/client/accounting.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
+    <link rel="icon" href="<c:url value='/resources/Frontend/images/logo.png'/>" type="image/png">
 
-
-    </style>
 </head>
 
 <body>

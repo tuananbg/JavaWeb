@@ -10,6 +10,16 @@
     <script src="js/client/accounting.js"></script>
     <script src="<c:url value='/js/client/store.js'/>"></script>
     <script type="text/javascript"></script>
+    <style>
+        .page-link.current {
+            background-color: #007bff; /* Màu nền active */
+            color: white; /* Màu chữ */
+            border-color: #007bff; /* Viền */
+            cursor: default;
+            pointer-events: none; /* Ngăn không cho click */
+        }
+
+    </style>
 </head>
 <body>
 <!----start-Header---->
@@ -45,32 +55,48 @@
             </div>
             <c:if test="${list.size() != 0}">
                 <div class="pagination justify-content-center">
+                    <!-- Nút Prev -->
                     <c:if test="${currentPage != 1}">
                         <a class="page-link"
-                           href="/laptopshop/store?page=${currentPage-1}&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">Prev</a>
+                           href="/laptopshop/store?page=${currentPage-1}&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">
+                            Prev
+                        </a>
                     </c:if>
+
+                    <!-- Trang đầu tiên -->
                     <c:if test="${currentPage == 1}">
                         <span class="page-link current">1</span>
                     </c:if>
                     <c:if test="${currentPage != 1}">
                         <a class="page-link"
-                           href="/laptopshop/store?page=1&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">1</a>
+                           href="/laptopshop/store?page=1&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">
+                            1
+                        </a>
                     </c:if>
+
+                    <!-- Các trang giữa -->
                     <c:forEach var="pag" items="${pageList}" varStatus="loop">
                         <c:if test="${currentPage == pag}">
                             <span class="page-link current">${pag}</span>
                         </c:if>
                         <c:if test="${currentPage != pag}">
                             <a class="page-link"
-                               href="/laptopshop/store?page=${pag}&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">${pag}</a>
+                               href="/laptopshop/store?page=${pag}&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">
+                                    ${pag}
+                            </a>
                         </c:if>
                     </c:forEach>
+
+                    <!-- Nút Next -->
                     <c:if test="${currentPage != totalPage}">
                         <a class="page-link"
-                           href="/laptopshop/store?page=${currentPage+1}&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">Next</a>
+                           href="/laptopshop/store?page=${currentPage+1}&range=${range}&brand=${brand}&manufactor=${manufactor}&os=${os}&ram=${ram}&pin=${pin}">
+                            Next
+                        </a>
                     </c:if>
                 </div>
             </c:if>
+            `
         </div>
         <div class="col-md-3">
             <h4>Lọc sản phẩm</h4>

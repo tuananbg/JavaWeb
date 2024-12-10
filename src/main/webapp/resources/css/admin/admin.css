@@ -1,5 +1,5 @@
 body {
-  padding-top: 80px;
+  padding-top: 50px;
   background-color: #f0f8ff; /* Light blue background for the entire page */
 }
 
@@ -29,11 +29,6 @@ body {
   transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
 }
 
-.side-bar li a:hover,
-.side-bar li a:focus {
-  background-color: #0056b3; /* Darker blue for hover effect */
-  color: #d4e4ff; /* Light blue text on hover */
-}
 
 th {
   text-align: center;
@@ -44,10 +39,10 @@ th {
   width: 220px;
 }
 
-.link > a:hover {
-  background-color: #0056b3;
-  color: #d4e4ff;
-}
+/*.link > a:hover {*/
+/*  background-color: #0056b3;*/
+/*  color: #d4e4ff;*/
+/*}*/
 
 .tmargin {
   margin-top: 15px;
@@ -78,15 +73,6 @@ canvas {
 
 .navbar a {
   color: white; /* White text color */
-}
-
-.navbar a:hover {
-  background-color: #0056b3; /* Darker blue for hover effect */
-  color: white; /* Keep text white on hover */
-}
-
-.navbar .navbar-brand {
-  color: white; /* White text for the brand */
 }
 
 .navbar .navbar-toggle .icon-bar {

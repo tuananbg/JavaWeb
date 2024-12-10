@@ -1,13 +1,12 @@
 package com.laptopshop.service;
 
-import java.util.List;
-import java.util.Set;
-
-import org.springframework.data.domain.Page;
-
 import com.laptopshop.dto.SanPhamDto;
 import com.laptopshop.dto.SearchSanPhamObject;
 import com.laptopshop.entities.SanPham;
+import org.springframework.data.domain.Page;
+
+import java.util.List;
+import java.util.Set;
 
 public interface SanPhamService {
 
@@ -34,4 +33,6 @@ public interface SanPhamService {
 	Iterable<SanPham> getSanPhamByTenDanhMuc(String brand);
 	
 	public Page<SanPham> getSanPhamByBrand(SearchSanPhamObject object, int page, int resultPerPage);
+
+
 }

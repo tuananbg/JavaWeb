@@ -60,7 +60,7 @@ h5 {
 
 .total, .donGia {
     font-weight: bold; /* Chữ đậm cho giá */
-    color: #28a745; /* Màu xanh cho giá */
+    color: #5f6470; /* Màu xanh cho giá */
 }
 
 @media (max-width: 768px) {

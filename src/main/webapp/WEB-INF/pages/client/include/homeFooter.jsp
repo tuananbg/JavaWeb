@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-<footer class="footer bg-light pt-5">
+<footer class="footer bg-light pt-5" style="padding-bottom: 40px">
     <div class="container">
         <div class="row">
             <!-- Thông tin chung -->
@@ -24,8 +24,8 @@
         </div>
         <hr class="my-4">
         <div class="text-center">
-            <p>&copy; Hoàng Tuấn An (Leader) - Đặng Thế Hoàn - Nguyễn Văn Luận</p>
-            <p>Thiết kế bởi Nhóm 4</p>
+            <p>&copy; Hoàng Tuấn An (Leader) - Hoàng Anh Quân - Nguyễn Văn Luận</p>
+            <p>Thiết kế bởi Nhóm 21</p>
         </div>
     </div>
 </footer>

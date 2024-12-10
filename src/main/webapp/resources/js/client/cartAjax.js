@@ -52,5 +52,5 @@ function updateOrderTotal() {
 }
 
 function formatCurrency(amount) {
-	return amount.toLocaleString("vi-VN") + " VND";
+	return amount.toLocaleString("vi-VN") + " VNĐ";
 }

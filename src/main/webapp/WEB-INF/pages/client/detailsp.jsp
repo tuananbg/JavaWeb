@@ -33,7 +33,7 @@
 <!-- Product Details Section -->
 <div id="notification"></div>
 <div class="container">
-    <div class="card">
+    <div class="card" style="padding-bottom: 40px">
         <div class="container-fluid">
             <div class="wrapper row">
                 <!-- Product Image Section -->

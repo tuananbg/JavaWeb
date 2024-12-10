@@ -47,14 +47,14 @@
         }
 
         /* Các nút hành động */
-        .btn {
-            font-size: 16px;
-            padding: 12px 25px;
-            margin-bottom: 15px;
-            border-radius: 6px;
-            font-weight: 600;
-            display: inline-block;
-        }
+        /*.btn {*/
+        /*    font-size: 16px;*/
+        /*    padding: 12px 25px;*/
+        /*    margin-bottom: 15px;*/
+        /*    border-radius: 6px;*/
+        /*    font-weight: 600;*/
+        /*    display: inline-block;*/
+        /*}*/
 
         .btn-primary {
             background-color: #007bff;
@@ -154,15 +154,38 @@
                 padding: 20px;
             }
 
-            .btn {
-                width: 100%;
-                margin-bottom: 15px;
-            }
-
+            /*.btn {*/
+            /*    width: 100%;*/
+            /*    margin-bottom: 15px;*/
+            /*}*/
             .mytable {
                 font-size: 0.9rem;
             }
         }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Khoảng cách giữa các dòng */
+            font-family: Arial, sans-serif; /* Phông chữ (tuỳ chọn) */
+        }
+
+        .user-info p {
+            display: flex; /* Sử dụng Flexbox */
+            align-items: center; /* Căn giữa theo chiều dọc */
+        }
+
+        .user-info span.fw-bold {
+            min-width: 150px; /* Độ rộng tối thiểu cho tiêu đề */
+            font-weight: bold; /* In đậm */
+            color: #333; /* Màu chữ của tiêu đề */
+        }
+
+        .user-info span.value {
+            flex: 1; /* Phần nội dung sẽ giãn ra để căn chỉnh */
+            color: #555; /* Màu chữ nội dung */
+        }
+
 
     </style>
 </head>
@@ -176,10 +199,13 @@
             <br>
             <h3 class="fw-bold">Thông tin tài khoản:</h3>
             <br>
-            <p><span class="fw-bold">Họ tên: </span>${user.getHoTen()}</p>
-            <p><span class="fw-bold">Số điện thoại: </span>${user.getSoDienThoai()}</p>
-            <p><span class="fw-bold">Email: </span>${user.getEmail()}</p>
-            <p><span class="fw-bold">Địa chỉ: </span>${user.getDiaChi()}</p>
+            <div class="user-info">
+                <p><span class="fw-bold">Họ tên:</span><span class="value">${user.getHoTen()}</span></p>
+                <p><span class="fw-bold">Số điện thoại:</span><span class="value">${user.getSoDienThoai()}</span></p>
+                <p><span class="fw-bold">Email:</span><span class="value">${user.getEmail()}</span></p>
+                <p><span class="fw-bold">Địa chỉ:</span><span class="value">${user.getDiaChi()}</span></p>
+            </div>
+
             <br>
             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInformation">Cập nhật thông tin cá
                 nhân</a>
@@ -312,7 +338,7 @@
 <script>
     $(document).ready(function () {
         $(".mytable .tongGiaTri").each(function () {
-            const value = accounting.formatMoney($(this).text()) + ' VND';
+            const value = accounting.formatMoney($(this).text()) + ' VNĐ';
             $(this).html(value);
         });
     });

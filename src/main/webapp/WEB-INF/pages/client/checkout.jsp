@@ -10,12 +10,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $(".mytable .donGia .check").each(function () {
-                var value = accounting.formatMoney($(this).text()) + ' VND';
+                var value = accounting.formatMoney($(this).text()) + ' VNĐ';
                 $(this).html(value);
             });
 
             $(".mytable .total").each(function () {
-                var value = accounting.formatMoney($(this).text()) + ' VND';
+                var value = accounting.formatMoney($(this).text()) + ' VNĐ';
                 $(this).html(value);
             });
         });
@@ -61,7 +61,7 @@
                         <td>
                             <img src="/laptopshop/img/${sanpham.id}.png" alt="not found img" class="img-fluid">
                         </td>
-                        <td style="color:green">${sanpham.tenSanPham}</td>
+                        <td style="color:#5f6470">${sanpham.tenSanPham}</td>
                         <td class="donGia">
                             <div class="check">${sanpham.donGia}</div>
                             <div> x ${quanity[sanpham.id]}</div>

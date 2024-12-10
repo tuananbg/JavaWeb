@@ -61,10 +61,11 @@ html
 		<span class="next_payment"><a class="paymentbtn" href="#">Mua thêm sản phẩm khác</a></span>
 		</td>
 		<td colspan="4">
-			<p class="cart_tongdonhang">Tổng giá trị đơn hàng : <span id="ordertotal"></span> VND</p>
+			<p class="cart_tongdonhang">Tổng giá trị đơn hàng : <span id="ordertotal"></span> VNĐ</p>
 
 		</td>
-</tr>
+</tr>
+
 </table>
   
 </div>  

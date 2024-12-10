@@ -4,7 +4,7 @@
 <%@ page isELIgnored="false"%>
 
 <div class="container-fluid">
-    <div class="col-md-3">
+    <div class="col-md-2">
 
       <div id="sidebar">
         <div class="container-fluid tmargin">
@@ -58,9 +58,12 @@
                   <a href="<c:url value='/admin/profile' />">
                       <span class="glyphicon glyphicon-user">&nbsp;</span>Thông tin cá nhân</a>
               </li>
+              <li>
+                  <a href="<c:url value='/logout' />"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
+              </li>
           </ul>
 
       </div>
     </div>
-    
+
     <script src="<c:url value='/js/admin.js'/>" ></script>

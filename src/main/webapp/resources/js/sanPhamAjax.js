@@ -21,8 +21,8 @@ $(document).ready(function() {
 					                  '<td>' + sanPham.hangSanXuat.tenHangSanXuat + '</td>' +
 					                  '<td>' + sanPham.donGia + '</td>' +
 					                  '<td>' + sanPham.donViKho + '</td>' +
-					                  '<td width="0%">'+'<input type="hidden" id="sanPhamId" value=' + sanPham.id + '>'+ '</td>' + 
-					                  '<td> <button class="btn btn-warning btnChiTiet" style="margin-right: 6px">Chi tiết</button>' ;
+						'<td width="0%">' + '<input type="hidden" id="sanPhamId" value=' + sanPham.id + '>' + '</td>' +
+						'<td style="width: 250px"> <button class="btn btn-warning btnChiTiet" style="margin-right: 6px">Chi tiết</button>';
 					
 					var checkTenDanhMuc = (sanPham.danhMuc.tenDanhMuc.toLowerCase()).indexOf("Laptop".toLowerCase());
 					sanPhamRow += ( checkTenDanhMuc != -1)?'<button class="btn btn-primary btnCapNhatLapTop" >Cập nhật</button>':'<button class="btn btn-primary btnCapNhatOther" >Cập nhật</button>';
