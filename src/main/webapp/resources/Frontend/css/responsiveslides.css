@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e9f1f9; /* Màu nền sáng */
+    color: #333;
+    font-size: 16px; /* Cỡ chữ mặc định cho body */
+}
+
+/* Overlay styling */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen mờ */
+    z-index: 999; /* Đảm bảo overlay hiển thị trên tất cả */
+}
+
+/* Header and navigation styling */
+header {
+    background-color: #51839f; /* Màu xanh nước biển */
+    color: #fff;
+    font-size: 18px; /* Cỡ chữ cho header */
+}
+
+header .header-top-nav .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Cỡ chữ cho liên kết trong nav */
+}
+
+header .header-top-nav .nav-item a:hover {
+    color: #ffc107; /* Màu vàng cho hiệu ứng hover */
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+/* Top navigation styling */
+.top-header {
+    background-color: #0056b3; /* Màu xanh đậm hơn */
+}
+
+.top-nav .nav {
+    display: flex; /* Sử dụng Flexbox để sắp xếp */
+    flex-wrap: nowrap; /* Ngăn không cho các phần tử con xuống dòng */
+    overflow: hidden; /* Ẩn các phần tử tràn ra ngoài */
+    white-space: nowrap; /* Ngăn không cho văn bản xuống dòng */
+}
+
+.top-nav .nav-item {
+    margin-right: 20px; /* Khoảng cách giữa các mục danh sách */
+}
+
+.top-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px; /* Cỡ chữ cho liên kết trong top-nav */
+}
+
+.top-nav .nav-link:hover {
+    color: #ffc107; /* Màu vàng cho hiệu ứng hover */
+}
+
+/* Slider styling */
+.image-slider {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100px; /* Đặt chiều cao cho slideshow */
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100px; /* Đảm bảo ảnh không bị méo */
+    object-fit: cover; /* Giữ nguyên tỷ lệ của ảnh */
+    transition: transform 0.5s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.image-slider .carousel-item {
+    height: 100%; /* Đảm bảo mỗi item của carousel chiếm hết chiều cao */
+}
+
+/* Card styling for product highlights */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-body h5 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem; /* Cỡ chữ cho tiêu đề trong card */
+}
+
+/* Cấu hình cho danh sách trong nav */
+.top-nav .nav-item {
+    white-space: nowrap; /* Ngăn không cho văn bản trong liên kết xuống dòng */
+}
+
+.list-group {
+    position: absolute;
+    z-index: 999;
+}
+
+/* CSS cho slideshow */
+.image-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.rslides {
+    list-style: none; /* Loại bỏ đánh số */
+    padding: 0; /* Xóa padding */
+    margin: 0; /* Xóa margin */
+    position: relative; /* Vị trí tương đối */
+}
+
+.rslides li {
+    display: none; /* Ẩn tất cả các slide */
+}
+
+.rslides li img {
+    width: 100%; /* Chiều rộng ảnh 100% */
+    height: 1000px; /* Đặt chiều cao cho ảnh là 100px */
+    object-fit: cover; /* Giữ nguyên tỷ lệ của ảnh */
+}
+
+/* Hiển thị slide đầu tiên */
+.rslides li:first-child {
+    display: block;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 50px;
+}
+.nav-link.active {
+    background-color: #007bff; /* Màu nền cho mục đang hoạt động */
+    color: #ffc107;
+    border-radius: 25px; /* Độ cong của viền */
+    padding: 10px;
+}

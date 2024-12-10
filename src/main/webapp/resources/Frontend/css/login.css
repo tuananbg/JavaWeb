@@ -1,0 +1,63 @@
+body {
+  background-color: #6492c0; /* Màu nền sáng */
+  font-family: Arial, sans-serif; /* Phông chữ đơn giản, dễ đọc */
+}
+
+.login-page {
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao 100% của viewport */
+}
+
+.form {
+  background: white; /* Nền trắng cho form */
+  padding: 40px; /* Khoảng cách bên trong */
+  border-radius: 10px; /* Bo góc cho form */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  width: 100%;
+  max-width: 400px; /* Chiều rộng tối đa */
+}
+
+.form-signin-heading {
+  font-size: 24px; /* Kích thước tiêu đề lớn */
+  margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  color: #343a40; /* Màu sắc tiêu đề */
+}
+
+.input-field {
+  width: 100%; /* Chiều rộng 100% */
+  padding: 10px; /* Padding cho các input */
+  margin: 10px 0; /* Khoảng cách giữa các input */
+  border: 1px solid #ced4da; /* Đường viền nhẹ */
+  border-radius: 5px; /* Bo góc nhẹ */
+}
+
+.input-field:focus {
+  border-color: #007bff; /* Đổi màu viền khi focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng đổ bóng khi focus */
+}
+
+.btn-primary {
+  width: 100%; /* Nút đăng nhập chiếm 100% chiều rộng */
+  padding: 10px; /* Padding cho nút */
+  border: none; /* Không có viền */
+  border-radius: 5px; /* Bo góc cho nút */
+  background-color: #007bff; /* Màu nền của nút */
+  color: white; /* Màu chữ của nút */
+  font-size: 16px; /* Kích thước chữ trong nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+.message {
+  text-align: center; /* Canh giữa thông điệp */
+  color: #6c757d; /* Màu chữ nhạt cho thông điệp */
+}
+
+hr {
+  margin: 20px 0; /* Khoảng cách trên và dưới của đường kẻ */
+}

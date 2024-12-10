@@ -1,0 +1,70 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: #ffffff; /* Nền trắng cho container */
+    border-radius: 10px; /* Góc bo tròn */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    padding: 30px; /* Padding cho container */
+    margin-top: 30px; /* Khoảng cách trên */
+}
+
+h2 {
+    color: #343a40; /* Màu chữ tối cho tiêu đề */
+}
+
+h5 {
+    color: #007bff; /* Màu xanh cho tiêu đề phần */
+}
+
+.mytable {
+    margin-top: 20px; /* Khoảng cách cho bảng */
+}
+
+.mytable th {
+    background-color: #007bff; /* Màu nền cho tiêu đề bảng */
+    color: white; /* Màu chữ trắng */
+    text-align: center; /* Căn giữa chữ */
+}
+
+.mytable td {
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    text-align: center; /* Căn giữa theo chiều ngang */
+}
+
+.mytable img {
+    border-radius: 5px; /* Góc bo tròn cho hình ảnh */
+    max-width: 100px; /* Kích thước tối đa cho hình ảnh */
+    height: auto; /* Tự động duy trì tỉ lệ */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Nền đỏ cho nút */
+    border: none; /* Không viền */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Nền đỏ đậm khi hover */
+}
+
+.btn-outline-primary {
+    border-color: #007bff; /* Viền màu xanh */
+    color: #007bff; /* Màu chữ xanh */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff; /* Nền xanh khi hover */
+    color: white; /* Chữ trắng khi hover */
+}
+
+.total, .donGia {
+    font-weight: bold; /* Chữ đậm cho giá */
+    color: #28a745; /* Màu xanh cho giá */
+}
+
+@media (max-width: 768px) {
+    .mytable img {
+        width: 80px; /* Kích thước hình ảnh nhỏ hơn trên mobile */
+    }
+}

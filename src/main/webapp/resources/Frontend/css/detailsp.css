@@ -1,0 +1,91 @@
+/* Định dạng chung cho các đoạn thông tin */
+.product-description {
+  line-height: 1.8; /* Tăng khoảng cách giữa các dòng */
+  margin-bottom: 15px; /* Khoảng cách giữa các đoạn */
+  color: #4a4a4a; /* Màu chữ trung tính, dễ đọc */
+  background-color: #f9f9f9; /* Màu nền nhạt để tách biệt với nền chính */
+  padding: 5px; /* Thêm khoảng cách trong */
+  border-left: 4px solid #3498db; /* Viền màu nhấn để tạo điểm nhấn */
+  border-radius: 5px; /* Bo góc nhẹ */
+}
+
+/* Tạo nhấn mạnh cho tiêu đề thông tin */
+.product-description .important {
+  font-weight: bold; /* Làm nổi bật */
+  color: #2c3e50; /* Màu đậm hơn */
+}
+
+/* Định dạng các tiêu đề nhỏ trong phần thông tin */
+.details h4 {
+  font-size: 1.5em; /* Tăng kích thước tiêu đề */
+  font-weight: bold; /* Đậm chữ */
+  color: #e74c3c; /* Màu sắc nổi bật */
+  margin-top: 20px; /* Khoảng cách trên tiêu đề */
+}
+
+/* Khoảng cách giữa các phần mô tả */
+.details p {
+  margin-bottom: 10px; /* Khoảng cách dưới giữa các đoạn văn */
+}
+
+/* Định dạng danh mục thông tin kỹ thuật */
+.product-details-list {
+  list-style: none; /* Loại bỏ ký hiệu đầu dòng */
+  padding: 0; /* Loại bỏ padding */
+  margin: 0; /* Loại bỏ margin */
+}
+
+.product-details-list li {
+  /*font-size: 1.1em; !* Kích thước chữ trung bình *!*/
+  /*padding: 10px; !* Thêm khoảng cách bên trong *!*/
+  border-bottom: 1px solid #ddd; /* Đường kẻ ngăn cách */
+}
+
+/* Tạo màu nền khác cho danh mục kỹ thuật */
+.product-details-list li:nth-child(odd) {
+  background-color: #f3f3f3; /* Màu nền nhạt */
+}
+
+/* Responsive: cải thiện trải nghiệm trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .product-description {
+    /*font-size: 1em; !* Giảm nhẹ kích thước chữ *!*/
+    /*padding: 10px; !* Giảm padding *!*/
+  }
+}
+
+/* Định dạng cho phần hiển thị hình ảnh sản phẩm */
+.preview-pic {
+  display: flex; /* Hiển thị dạng hàng */
+  justify-content: center; /* Căn giữa hình ảnh */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+.preview-pic img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước container */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+  border-radius: 10px; /* Bo góc cho hình ảnh */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Đổ bóng để nổi bật hình ảnh */
+  transition: transform 0.3s; /* Hiệu ứng phóng to khi hover */
+}
+
+.preview-pic img:hover {
+  transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+}
+
+/* Tăng kích thước container ảnh để đảm bảo ảnh to hơn */
+.preview.col-md-6 {
+  padding: 20px; /* Thêm khoảng cách trong */
+}
+
+/* Đảm bảo hình ảnh trông đẹp trên thiết bị nhỏ */
+@media (max-width: 768px) {
+  .preview-pic img {
+    max-width: 100%;
+    height: auto; /* Đảm bảo ảnh giữ tỉ lệ trên thiết bị nhỏ */
+  }
+}
+
+
+

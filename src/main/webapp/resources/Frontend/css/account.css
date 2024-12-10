@@ -1,0 +1,48 @@
+/*!* Đặt chung cho bảng lịch sử mua hàng *!*/
+/*.table-cart-checkout {*/
+/*    width: 100%;*/
+/*    margin-top: 1.5rem;*/
+/*    border-collapse: collapse;*/
+/*    font-size: 1rem;*/
+/*}*/
+
+/*!* Định dạng tiêu đề bảng *!*/
+/*.table-cart-checkout th {*/
+/*    background-color: #007bff; !* Màu xanh cho phần tiêu đề *!*/
+/*    color: white;*/
+/*    padding: 0.75rem;*/
+/*    text-align: center;*/
+/*    border: 1px solid #dee2e6;*/
+/*}*/
+
+/*!* Định dạng các hàng trong bảng *!*/
+/*.table-cart-checkout td {*/
+/*    padding: 0.75rem;*/
+/*    text-align: center;*/
+/*    border: 1px solid #dee2e6;*/
+/*}*/
+
+/*!* Tô màu xen kẽ cho các hàng để dễ nhìn *!*/
+/*.table-cart-checkout tr:nth-child(even) {*/
+/*    background-color: #f8f9fa;*/
+/*}*/
+
+/*!* Đặt font chữ cho tiêu đề phần "Lịch sử mua hàng" *!*/
+/*h3 {*/
+/*    font-weight: bold;*/
+/*    margin-top: 1.5rem;*/
+/*    color: #343a40; !* Màu tối hơn cho tiêu đề *!*/
+/*}*/
+
+/*!* Điều chỉnh tổng tiền hiển thị *!*/
+/*.table-cart-checkout .tongGiaTri {*/
+/*    font-weight: bold;*/
+/*    color: #28a745; !* Màu xanh lá cho số tiền *!*/
+/*}*/
+
+/*!* Phong cách nút "Cập nhật thông tin cá nhân" và "Đổi mật khẩu" *!*/
+/*.btn-primary, .btn-danger {*/
+/*    font-weight: bold;*/
+/*    padding: 0.5rem 1rem;*/
+/*    margin-top: 1rem;*/
+/*}*/

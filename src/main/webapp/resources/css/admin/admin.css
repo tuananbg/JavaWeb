@@ -1,0 +1,94 @@
+body {
+  padding-top: 80px;
+  background-color: #f0f8ff; /* Light blue background for the entire page */
+}
+
+.style-header {
+  background-color: #0d6efd;
+}
+
+#sidebar {
+  position: fixed;
+  top: 50px;
+  left: 220px;
+  width: 220px;
+  margin-left: -220px;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  background-color: #007bff; /* Blue background */
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.side-bar > li > a {
+  color: #ffffff; /* White text for sidebar links */
+  width: 220px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+.side-bar li a:hover,
+.side-bar li a:focus {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  color: #d4e4ff; /* Light blue text on hover */
+}
+
+th {
+  text-align: center;
+}
+
+.link > a {
+  color: #ffffff;
+  width: 220px;
+}
+
+.link > a:hover {
+  background-color: #0056b3;
+  color: #d4e4ff;
+}
+
+.tmargin {
+  margin-top: 15px;
+}
+
+.navbar-right .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+}
+
+span.error {
+  color: red;
+  margin-left: 5px;
+}
+
+canvas {
+  width: 900px !important;
+  height: 450px !important;
+}
+
+.navbar {
+  background-color: #007bff; /* Blue background color */
+}
+
+.navbar a {
+  color: white; /* White text color */
+}
+
+.navbar a:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  color: white; /* Keep text white on hover */
+}
+
+.navbar .navbar-brand {
+  color: white; /* White text for the brand */
+}
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: #0075ee; /* White bars for the toggle icon */
+}

@@ -1,0 +1,102 @@
+/* Định dạng cho tên sản phẩm */
+p.cart_ten {
+  font-weight: bold;
+  font-size: 1.4em; /* Tăng kích thước chữ một chút */
+  color: #333; /* Màu sắc thân thiện hơn */
+  margin-bottom: 10px;
+}
+
+p.cart_ten a {
+  text-decoration: none;
+  color: inherit; /* Thừa hưởng màu sắc từ p.cart_ten */
+}
+
+p.cart_ten a:hover {
+  color: #007bff; /* Giữ màu hover cho liên kết */
+}
+
+/* Định dạng cho mã sản phẩm */
+p.cart_masanpham {
+  margin-bottom: 10px;
+}
+
+p.cart_masanpham span {
+  color: red;
+}
+
+/* Định dạng cho input số lượng sản phẩm */
+input.input_num_cart {
+  width: 50px; /* Tăng chiều rộng một chút */
+  padding: 5px; /* Tăng padding để dễ nhập */
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Thêm bo góc */
+  font-size: 14px;
+}
+
+/* Định dạng cho tổng đơn hàng */
+p.cart_tongdonhang {
+  text-align: center;
+  font-size: 16px; /* Tăng kích thước chữ để nổi bật hơn */
+}
+
+p.cart_tongdonhang span {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Định dạng cho nút thanh toán */
+span.next_payment {
+  float: right;
+  margin: 10px;
+}
+
+.paymentbtn {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px; /* Tăng padding để nút lớn hơn */
+  border: none;
+  text-align: center;
+  cursor: pointer; /* Thay đổi con trỏ khi hover */
+}
+
+.paymentbtn:hover {
+  background: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* Định dạng cho bảng giỏ hàng */
+table.tablecart {
+  margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tablecart td, .tablecart th {
+  border: 1px solid #ccc;
+  padding: 10px; /* Tăng padding cho ô */
+}
+
+.tablecart tr:first-child {
+  background: #F7F7F7;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px; /* Tăng kích thước chữ */
+}
+
+/* Giảm kích thước ảnh sản phẩm */
+.cart-img {
+  max-width: 120px; /* Giảm kích thước ảnh một chút */
+  display: block;
+  margin: auto;
+}
+
+/* Định dạng cho bảng thanh toán */
+.table-cart-checkout .form-control {
+  width: 60px;
+  padding: 5px; /* Tăng padding để dễ sử dụng */
+}
