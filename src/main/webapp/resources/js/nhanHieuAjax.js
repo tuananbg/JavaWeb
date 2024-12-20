@@ -35,8 +35,8 @@ $(document).ready(function(){
 					                  '<td width="20%"">' + nhanHieu.id + '</td>' +
 					                  '<td>' + nhanHieu.tenHangSanXuat + '</td>' +
 					                  '<td>'+'<input type="hidden" value=' + nhanHieu.id + '>'
-					                     + '<button class="btn btn-primary btnCapNhatNhanHieu" >Cập nhật</button>' +
-					                     '   <button class="btn btn-danger btnXoaNhanHieu">Xóa</button></td>'
+						+ '<button class="btn btn-warning btnCapNhatNhanHieu" title="Cập nhật" ><i class="fa fa-pencil"></i></button>' +
+						'   <button class="btn btn-danger btnXoaNhanHieu" title="Xóa" style="margin-left: 10px"><i class="fa fa-trash"></button></td>'
 				                      '</tr>';
 					$('.nhanHieuTable tbody').append(nhanHieuRow);
 				});

@@ -26,8 +26,9 @@ $(document).ready(function() {
 					  
 					  taiKhoanRow +='</td>' +
 					                  '<td width="0%">'+'<input type="hidden" id="idTaiKhoan" value=' + taiKhoan.id + '>'+ '</td>'+
-//					                  '<td><button class="btn btn-primary btnCapNhat" >Cập nhật</button></td>' + 
-					                  '<td><button class="btn btn-danger btnXoa" >Xóa</button></td>';			;				                  
+						  // '<td><button class="btn btn-warning btnCapNhat" title="Cập nhật"><i class="fa fa-pencil"></i></button></td>' +
+						  '<td><button class="btn btn-danger btnXoa" title="Xóa"><i class="fa fa-trash"></button></td>';
+					;
 					$('.taiKhoanTable tbody').append(taiKhoanRow);
 
 				});

@@ -59,7 +59,7 @@
                       <span class="glyphicon glyphicon-user">&nbsp;</span>Thông tin cá nhân</a>
               </li>
               <li>
-                  <a href="<c:url value='/logout' />"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
+                  <a href="<c:url value='/logout' />"><span class="glyphicon glyphicon-log-out">&nbsp;</span> Đăng xuất</a>
               </li>
           </ul>
 

@@ -36,8 +36,8 @@ $(document).ready(function(){
 					                  '<td width="20%">' + danhMuc.id + '</td>' +
 					                  '<td>' + danhMuc.tenDanhMuc + '</td>' +
 					                  '<td>'+'<input type="hidden" value=' + danhMuc.id + '>'
-					                     + '<button class="btn btn-primary btnCapNhatDanhMuc" >Cập nhật</button>' +
-					                     '   <button class="btn btn-danger btnXoaDanhMuc">Xóa</button></td>'
+						+ '<button class="btn btn-warning btnCapNhatDanhMuc" title="Cập nhật"><i class="fa fa-pencil"></i></button>' +
+						'   <button class="btn btn-danger btnXoaDanhMuc" title="Xóa" style="margin-left: 10px"><i class="fa fa-trash"></i></button></td>'
 				                      '</tr>';
 					$('.danhMucTable tbody').append(danhMucRow);
 				});		

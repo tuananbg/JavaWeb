@@ -20,8 +20,8 @@ $(document).ready(function() {
 					                  '<td>' + lienHe.ngayTraLoi + '</td>';
 				
 					        lienHeRow += '<td width="0%">'+'<input type="hidden" id="lienHeId" value=' + lienHe.id + '>'+ '</td>'+
-					                  '<td><button class="btn btn-primary btnChiTiet" >Chi Tiết</button>' +
-                                      '&nbsp; <button class="btn btn-warning btnTraLoi" >Trả lời</button></td>';
+								'<td><button class="btn btn-primary btnChiTiet" title="Chi tiết"><i class="fa fa-eye"></i></button>' +
+								'&nbsp; <button class="btn btn-warning btnTraLoi" title="Trả lời"><i class="fa fa-reply"></i></button></td>';
 					                  
 					$('.lienHeTable tbody').append(lienHeRow);
 					

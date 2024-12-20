@@ -34,12 +34,12 @@ $(document).ready(function() {
 					                  '<td>' + donHang.ngayGiaoHang + '</td>' +
 					                  '<td>' + donHang.ngayNhanHang + '</td>' +
 					                  '<td width="0%">'+'<input type="hidden" class="donHangId" value=' + donHang.id + '>'+ '</td>'+
-					                  '<td><button class="btn btn-warning btnChiTiet" >Chi Tiết</button>';
+						'<td><button class="btn btn-success btnChiTiet" title="Chi tiết"><i class="fa fa-eye"></i></button>';
 					     if(donHang.trangThaiDonHang == "Đang chờ giao" || donHang.trangThaiDonHang == "Đang giao"){
-					    	 donHangRow += ' &nbsp;<button class="btn btn-primary btnPhanCong">Phân công</button>'+
-					    	               ' &nbsp;<button class="btn btn-danger btnHuy">Hủy đơn</button>' ;
+							 donHangRow += ' &nbsp;<button class="btn btn-primary btnPhanCong" title="Phân công"><i class="fa fa-truck"></i></button>' +
+								 ' &nbsp;<button class="btn btn-danger btnHuy" title="Hủy đơn"><i class="fa fa-ban"></i></button>';
 					     } else if (donHang.trangThaiDonHang == "Chờ duyệt"){
-					         donHangRow += ' &nbsp;<button class="btn btn-primary btnCapNhat" >Cập Nhật</button> </td>';
+							 donHangRow += ' &nbsp;<button class="btn btn-warning btnCapNhat" title="Cập nhật"><i class="fa fa-pencil"></i></button> </td>';
 					     }
 					                  
 					$('.donHangTable tbody').append(donHangRow);
